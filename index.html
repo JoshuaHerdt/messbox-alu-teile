@@ -244,9 +244,7 @@ a.karte.dl h3 { color: var(--accent); }
       <aside class="seite">
         <div class="schalter"><h4>Einblenden</h4>
           <label><input type="checkbox" id="g-werk" checked><span class="punkt" style="background:#bec3ca"></span>Werkstattteile (Alu)</label>
-          <label><input type="checkbox" id="g-norm" checked><span class="punkt" style="background:#cdaa5a"></span>Normteile</label>
-          <label><input type="checkbox" id="g-druck" checked><span class="punkt" style="background:#3e4148"></span>Druckteile (bleiben)</label>
-          <label><input type="checkbox" id="g-geraet" checked><span class="punkt" style="background:#6b3fa0"></span>Geräte und Kaufteile</label>
+          <label><input type="checkbox" id="g-rest" checked><span class="punkt" style="background:#3e4148"></span>Alle anderen Teile</label>
           <label><input type="checkbox" id="g-offen"><span class="punkt" style="background:transparent"></span>Vorderwand und Deckel weg</label>
         </div>
         <div><h4>Explosion (nur Werkstattteile)</h4><input type="range" id="explo" min="0" max="1" step="0.01" value="0" aria-label="Explosionsansicht"></div>
@@ -458,7 +456,7 @@ $('#laden').remove();
 
 let explo = 0;
 const sicht = () => {
-  const an = { werk: $('#g-werk').checked, norm: $('#g-norm').checked, druck: $('#g-druck').checked, geraet: $('#g-geraet').checked };
+  const rest = $('#g-rest').checked, an = { werk: $('#g-werk').checked, norm: rest, druck: rest, geraet: rest };
   const offen = $('#g-offen').checked;
   Object.values(T).forEach(o => {
     let v = an[o.t.g];
@@ -467,7 +465,7 @@ const sicht = () => {
     o.mesh.position.copy(o.ex).multiplyScalar(explo);
   });
 };
-['g-werk', 'g-norm', 'g-druck', 'g-geraet', 'g-offen'].forEach(id => $('#' + id).addEventListener('change', sicht));
+['g-werk', 'g-rest', 'g-offen'].forEach(id => $('#' + id).addEventListener('change', sicht));
 $('#explo').addEventListener('input', e => { explo = +e.target.value; sicht(); });
 
 const BLICK = { schraeg: [0.75, 1.0, 0.62], vorne: [0, 1, 0.12], hinten: [0.1, -1, 0.18], oben: [0.001, 0.12, 1], unten: [0.35, 0.6, -0.8] };

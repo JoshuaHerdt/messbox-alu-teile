@@ -223,7 +223,7 @@ a.karte.dl h3 { color: var(--accent); }
     <div><b>10</b><span>Teile in 6 Arten, alle aus Alu-Blech 3 mm oder Alu-Vierkant 10 × 10</span></div>
     <div><b id="z-masse">1,6 kg</b><span>Aluminium gesamt</span></div>
     <div><b>220 × 165 × 140</b><span>Innenmaß der Kammer in mm</span></div>
-    <div><b>5–8 h</b><span>geschätzte Werkstattzeit für die Teile A1–A5</span></div>
+    <div><b>A1–A5</b><span>jetzt fertigen – der Deckel A6 folgt später</span></div>
   </div>
 
   <nav class="sprung" aria-label="Direkt zu einem Teil">
@@ -272,41 +272,19 @@ a.karte.dl h3 { color: var(--accent); }
     </div>
   </section>
 
-  <section id="aufbau">
-    <p class="eyebrow">Aufbau</p>
-    <h2>Schritt für Schritt zusammenbauen</h2>
-    <p>Jeder Schritt zeigt, welche Teile neu dazukommen (blau hervorgehoben) und welche Schrauben ihr dafür braucht. Mit „Weiter“ oder den Nummern springt ihr durch den Aufbau.</p>
-    <div class="schrittwahl" id="schrittwahl" role="group" aria-label="Schritt wählen"></div>
-    <div class="teilbuehne">
-      <div class="leinwand" id="lw3"><canvas id="c3" aria-label="3D-Ansicht des Aufbaus"></canvas></div>
-      <aside class="schrittinfo" aria-live="polite">
-        <p class="snr" id="s-nr"></p>
-        <h3 id="s-titel"></h3>
-        <p id="s-text"></p>
-        <div><h4>Neu in diesem Schritt</h4><p id="s-teile" style="margin:6px 0 0;font-size:14px"></p></div>
-        <div class="mat"><b>Schrauben und Material:</b> <span id="s-schr"></span></div>
-        <div class="knoepfe"><button id="s-zur">Zurück</button><button id="s-wei">Weiter</button><button id="s-play" aria-pressed="false">Abspielen</button></div>
-      </aside>
-    </div>
-  </section>
+  
 
   
 
   <section id="bauweise">
     <p class="eyebrow">Bauprinzip</p>
     <h2>Sechs Teilearten, nur gerade Schnitte</h2>
-    <div class="zwei">
+    <div>
       <div class="karte"><h3>Aufbau</h3><ul>
         <li><b>4 Eckpfosten</b> (Vierkant 10 × 10 × 140) stehen innen in den Ecken. Sie tragen alle Schrauben und bestimmen die Kammerhöhe.</li>
         <li><b>Boden</b> (3 mm, rechteckig) liegt im Rahmen des gedruckten Sockels und wird von unten an die Pfosten geschraubt.</li>
         <li><b>Vorder- und Rückwand</b> (226 × 139) überdecken die Stirnseiten der <b>Seitenwände</b> (165 × 139). Alle vier sind mit M3-Senkschrauben von außen an die Pfosten geschraubt.</li>
         <li><b>Deckel</b> (3 mm) liegt auf den Pfosten und wird mit 4 Rändelschrauben ohne Werkzeug festgezogen. Die Wände sind 1 mm niedriger; dort wird das 2-mm-Moosgummi auf 1 mm zusammengedrückt und dichtet so das Licht ab.</li>
-      </ul></div>
-      <div class="karte"><h3>Was die Werkstatt dafür braucht</h3><ul>
-        <li>Säge oder Tafelschere für den Zuschnitt, Fräse zum Planfräsen der Kanten und für die Deckelöffnung</li>
-        <li>Ständerbohrmaschine, 90°-Senker, Gewindebohrer M3</li>
-        <li>Kein Schweißen, kein Biegen, kein CNC nötig. Mit CNC oder Wasserstrahl geht es aber schneller (DXF liegt bei).</li>
-        <li>Zeitaufwand geschätzt 5–8 Stunden: Zuschnitt und Planfräsen ca. 3 h, Bohrungen und Gewinde ca. 2 h, Deckelöffnung mit Eckfreibohrungen und Magnettaschen ca. 1 h.</li>
       </ul></div>
     </div>
   </section>
@@ -315,14 +293,14 @@ a.karte.dl h3 { color: var(--accent); }
     <p class="eyebrow">Stückliste</p>
     <h2>Teile für die Werkstatt</h2>
     <div class="tab"><table>
-      <thead><tr><th>Nr.</th><th>Teil</th><th>Anz.</th><th>Fertigmaß mm</th><th>Material</th><th>Arbeitsgänge</th></tr></thead>
+      <thead><tr><th>Nr.</th><th>Teil</th><th>Anz.</th><th>Fertigmaß mm</th><th>Material</th><th>Was dran ist</th></tr></thead>
       <tbody>
-        <tr><td class="mono"><a href="#teil-A1" data-teil="A1">A1</a></td><td>Bodenplatte</td><td>1</td><td class="mono">226 × 171 × 3</td><td>Alu-Blech 3 mm</td><td>Zuschnitt, 10 Bohrungen mit Senkung von unten</td></tr>
-        <tr><td class="mono"><a href="#teil-A2" data-teil="A2">A2</a></td><td>Vorderwand</td><td>1</td><td class="mono">226 × 139 × 3</td><td>Alu-Blech 3 mm</td><td>Zuschnitt, 4 Bohrungen mit Senkung außen</td></tr>
+        <tr><td class="mono"><a href="#teil-A1" data-teil="A1">A1</a></td><td>Bodenplatte</td><td>1</td><td class="mono">226 × 171 × 3</td><td>Alu-Blech 3 mm</td><td>10 Bohrungen mit Senkung von unten</td></tr>
+        <tr><td class="mono"><a href="#teil-A2" data-teil="A2">A2</a></td><td>Vorderwand</td><td>1</td><td class="mono">226 × 139 × 3</td><td>Alu-Blech 3 mm</td><td>4 Bohrungen mit Senkung außen</td></tr>
         <tr><td class="mono"><a href="#teil-A3" data-teil="A3">A3</a></td><td>Rückwand</td><td>1</td><td class="mono">226 × 139 × 3</td><td>Alu-Blech 3 mm</td><td>wie A2, dazu Ø 12,2 und Ø 22,3 sowie 7 × Ø 3,2 für Kabelschellen</td></tr>
-        <tr><td class="mono"><a href="#teil-A4" data-teil="A4">A4</a></td><td>Seitenwand</td><td>2</td><td class="mono">165 × 139 × 3</td><td>Alu-Blech 3 mm</td><td>Zuschnitt, je 4 Bohrungen mit Senkung außen</td></tr>
-        <tr><td class="mono"><a href="#teil-A5" data-teil="A5">A5</a></td><td>Eckpfosten</td><td>4</td><td class="mono">10 × 10 × 140,0</td><td>Alu-Vierkant</td><td>Ablängen, auf gleiche Länge planfräsen, 6 × M3 je Pfosten</td></tr>
-        <tr><td class="mono"><a href="#teil-A6" data-teil="A6">A6</a></td><td>Deckel</td><td>1</td><td class="mono">226 × 171 × 3,0</td><td>Alu-Blech 3 mm</td><td>Zuschnitt, Öffnung 66 × 98 mit Eckfreibohrungen fräsen, 6 Magnettaschen, 4 × Ø 3,4. <b>Folgt später – bitte noch nicht fertigen.</b></td></tr>
+        <tr><td class="mono"><a href="#teil-A4" data-teil="A4">A4</a></td><td>Seitenwand</td><td>2</td><td class="mono">165 × 139 × 3</td><td>Alu-Blech 3 mm</td><td>je 4 Bohrungen mit Senkung außen</td></tr>
+        <tr><td class="mono"><a href="#teil-A5" data-teil="A5">A5</a></td><td>Eckpfosten</td><td>4</td><td class="mono">10 × 10 × 140,0</td><td>Alu-Vierkant</td><td>alle vier gleich lang, 6 × M3 je Pfosten</td></tr>
+        <tr><td class="mono"><a href="#teil-A6" data-teil="A6">A6</a></td><td>Deckel</td><td>1</td><td class="mono">226 × 171 × 3,0</td><td>Alu-Blech 3 mm</td><td>Öffnung, 6 Magnettaschen, 4 Bohrungen. <b>Folgt später – bitte noch nicht fertigen.</b></td></tr>
       </tbody></table></div>
     <p style="margin-top:12px">Bitte alle Kanten entgraten. Eloxieren ist nicht nötig, weil wir die Kammer innen auskleiden.</p>
     <div class="achtung"><b>Wichtig:</b> Alle vier Pfosten genau gleich lang (140 mm) – darauf liegt der Deckel. Den <b>Deckel A6 bitte noch nicht fertigen</b>: Lage von Öffnung und Magneten hängt von einer Messung am Gerät ab, die Zeichnung schicken wir nach.</div>
@@ -379,7 +357,7 @@ a.karte.dl h3 { color: var(--accent); }
       <a class="karte dl" href="downloads/Alu-Teile_Messbox_Zeichnungen.pdf" download><h3>Zeichnungen (PDF)</h3>
         <p>Alle Blätter: Zusammenbau, A1–A5. A3 quer, Maßstab 1:1.</p></a>
       <a class="karte dl" href="downloads/Alu-Teile_Messbox_DXF.zip" download><h3>DXF (ZIP)</h3>
-        <p>Konturen und Bohrbilder A1–A4, 1:1 in mm – für Laser, Wasserstrahl oder CNC.</p></a>
+        <p>Konturen und Bohrbilder A1–A4, 1:1 in mm.</p></a>
       <a class="karte dl" href="downloads/Alu-Teile_Messbox_STEP.zip" download><h3>STEP (ZIP)</h3>
         <p>3D-Modelle A1–A5 für CAD/CAM.</p></a>
       <div class="karte"><h3>Deckel A6</h3><p>Folgt später: Die Lage seiner Öffnung hängt von einer Messung am Messgerät ab.
@@ -709,7 +687,7 @@ function infoTeil(D) {
     <p style="margin:0;font-size:14px">${esc(D.hinweis)}</p>
     <div id="auswahl" hidden></div>
     <div><h4>Bohrungen und Ausschnitte · antippen</h4><div class="tab" style="margin-top:6px"><table><thead><tr><th>Nr.</th><th>u</th><th>v</th><th>Ausführung</th></tr></thead><tbody>${zeilen}</tbody></table></div></div>
-    <div><h4>Fertigung Schritt für Schritt</h4><ol>${D.schritte.map(s => `<li>${esc(s)}</li>`).join('')}</ol></div>
+
     <p style="margin:0;font-size:13px"><a href="#z-${D.k}">2D-Zeichnung ${D.k}</a></p>`;
   document.querySelectorAll('#teilinfo tbody tr').forEach(tr => {
     const f = () => waehleLoch(wahl === +tr.dataset.i ? null : +tr.dataset.i);
@@ -744,82 +722,7 @@ const start = (location.hash.match(/^#teil-(A[1-6])$/) || [])[1];
 zeigeTeil(start || 'A1', false); blick('vorne', true);
 if (start) setTimeout(() => $('#teile3d').scrollIntoView({ block: 'start' }), 50);
 
-// =============================================================== Aufbau in Schritten
-const B3 = buehne($('#c3'), false);
-B3.cam.up.set(0, 0, 1);
-const G = dekodiere(MAN, $('#geo').textContent);
-const INFO = {}; MAN.teile.forEach(t => { INFO[t.k] = t; });
-const M3 = {};
-const ALLE = [...new Set(E.aufbau.flatMap(s => s.neu))];
-ALLE.forEach(k => {
-  const t = INFO[k]; if (!t) return;
-  const metall = t.g === 'werk' || ['K06', 'K13', 'N1'].includes(k);
-  const glas = { K02: .3, K04: .3, K09: .35, K08: .55, K03: .85, K05: .85 }[k] || 1;
-  const mat = new THREE.MeshStandardMaterial({ color: new THREE.Color(t.c[0] / 255, t.c[1] / 255, t.c[2] / 255).convertSRGBToLinear(),
-    metalness: metall ? .75 : .05, roughness: metall ? .34 : .55, envMapIntensity: metall ? .9 : .55, transparent: glas < 1, opacity: glas, depthWrite: glas >= 1, side: THREE.DoubleSide });
-  const m = new THREE.Mesh(G[k], mat); m.visible = false; B3.sc.add(m);
-  M3[k] = { m, mitte: new V3(...t.m), name: schoen(t.n) };
-});
-let schritt = 0, abspielen = null;
-const akzent = new THREE.Color(css('--accent') || '#1d5bc4');
-const leiste = $('#schrittwahl');
-E.aufbau.forEach((s, i) => {
-  const b = document.createElement('button'); b.textContent = i + 1; b.title = s.t; b.setAttribute('aria-label', `Schritt ${i + 1}: ${s.t}`);
-  b.addEventListener('click', () => { stopp(); zeigeSchritt(i); }); leiste.appendChild(b);
-});
-const anim = [];
-function versatz(k, von) {
-  const v = new V3(...von);
-  if (v.length() <= 1.5) {                                  // Richtung: nach außen auf der Seite des Teils
-    const c = M3[k].mitte;
-    return new V3(v.x ? Math.sign(c.x || 1) * 110 : 0, v.y ? Math.sign(c.y || 1) * 110 : 0, v.z ? Math.sign(v.z) * 110 : 0);
-  }
-  return v;
-}
-function zeigeSchritt(i) {
-  schritt = i;
-  const s = E.aufbau[i];
-  Object.keys(M3).forEach(k => { M3[k].m.visible = false; M3[k].m.position.set(0, 0, 0); M3[k].m.material.emissive.setHex(0); });
-  E.aufbau.slice(0, i + 1).forEach((st, j) => st.neu.forEach(k => { if (M3[k]) M3[k].m.visible = true; }));
-  anim.length = 0;
-  s.neu.forEach(k => { if (!M3[k]) return; const off = versatz(k, s.von); M3[k].m.position.copy(off); anim.push({ k, off }); });
-  anim.t0 = performance.now();
-  $('#s-nr').textContent = `SCHRITT ${i + 1} VON ${E.aufbau.length}`;
-  $('#s-titel').textContent = s.t; $('#s-text').textContent = s.x; $('#s-schr').textContent = s.s;
-  $('#s-teile').textContent = s.neu.filter(k => M3[k]).map(k => `${k} ${M3[k].name}`).join(' · ');
-  leiste.querySelectorAll('button').forEach((b, j) => { b.setAttribute('aria-pressed', String(j === i)); b.classList.toggle('fertig', j < i); });
-  $('#s-zur').disabled = i === 0; $('#s-wei').disabled = i === E.aufbau.length - 1;
-  // Kamera auf alle sichtbaren Teile
-  const bb = new THREE.Box3();
-  Object.keys(M3).forEach(k => { if (M3[k].m.visible) { M3[k].m.geometry.computeBoundingBox(); bb.union(M3[k].m.geometry.boundingBox); } });
-  const ziel = bb.getCenter(new V3()), gr = bb.getSize(new V3()).length();
-  const dist = Math.max(380, gr / (2 * Math.tan(THREE.MathUtils.degToRad(B3.cam.fov / 2))) * 1.25);
-  B3.fliege(ziel.clone().add(new V3(0.62, 1.0, 0.7).normalize().multiplyScalar(dist)), ziel);
-}
-function stopp() { if (abspielen) { clearInterval(abspielen); abspielen = null; $('#s-play').setAttribute('aria-pressed', 'false'); $('#s-play').textContent = 'Abspielen'; } }
-$('#s-zur').addEventListener('click', () => { stopp(); if (schritt > 0) zeigeSchritt(schritt - 1); });
-$('#s-wei').addEventListener('click', () => { stopp(); if (schritt < E.aufbau.length - 1) zeigeSchritt(schritt + 1); });
-$('#s-play').addEventListener('click', () => {
-  if (abspielen) { stopp(); return; }
-  if (schritt >= E.aufbau.length - 1) zeigeSchritt(0);
-  $('#s-play').setAttribute('aria-pressed', 'true'); $('#s-play').textContent = 'Anhalten';
-  abspielen = setInterval(() => { if (schritt >= E.aufbau.length - 1) { stopp(); return; } zeigeSchritt(schritt + 1); }, 4200);
-});
-const ruhig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-function animiere(t) {
-  if (!anim.length) return;
-  const p = ruhig ? 1 : Math.min(1, (t - anim.t0 - 150) / 1100);
-  const e = p <= 0 ? 0 : 1 - Math.pow(1 - p, 3);
-  anim.forEach(a => {
-    const m = M3[a.k].m;
-    m.position.copy(a.off).multiplyScalar(1 - e);
-    m.material.emissive.copy(akzent).multiplyScalar(0.45 * (1 - Math.max(0, (p - 0.7) / 0.3)) + 0.12);
-  });
-}
-zeigeSchritt(0);
-B3.cam.position.set(400, 600, 450);
-
-function loop(t) { B2.tick(t); animiere(t); B3.tick(t); requestAnimationFrame(loop); }
+function loop(t) { B2.tick(t); requestAnimationFrame(loop); }
 requestAnimationFrame(loop);
 })();
 
